@@ -8,6 +8,7 @@ function UploadForm() {
 
   function changeHandler(e) {
     const selected = e.target.files[0];
+    console.log(e.target.files);
 
     if (selected && types.includes(selected.type)) {
       setFile(selected);
